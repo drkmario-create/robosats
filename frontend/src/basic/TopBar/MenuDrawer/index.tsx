@@ -182,7 +182,7 @@ const MenuDrawer = ({ show, setShow }: MenuDrawerProps): React.JSX.Element => {
               <ListItemIcon>
                 <Info />
               </ListItemIcon>
-              <ListItemText primary={t('RoboSats')} />
+              <ListItemText primary={t('DimBR')} />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
@@ -194,7 +194,7 @@ const MenuDrawer = ({ show, setShow }: MenuDrawerProps): React.JSX.Element => {
               <ListItemIcon>
                 <School />
               </ListItemIcon>
-              <ListItemText primary={t('Learn RoboSats')} />
+              <ListItemText primary={t('Learn DimBR')} />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>

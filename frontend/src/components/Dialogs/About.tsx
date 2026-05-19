@@ -57,12 +57,12 @@ const AboutDialog = ({ open, onClose }: Props): React.JSX.Element => {
               <p>
                 {' '}
                 {t(
-                  "AnonymousAlice01 wants to sell bitcoin. She posts a sell order. BafflingBob02 wants to buy bitcoin and he takes Alice's order. Both have to post a small bond using lightning to prove they are real robots. Then, Alice posts the trade collateral also using a lightning hold invoice. RoboSats locks the invoice until Alice confirms she received the fiat, then the satoshis are released to Bob. Enjoy your satoshis, Bob!",
+                  "AnonymousAlice01 wants to sell bitcoin. She posts a sell order. BafflingBob02 wants to buy bitcoin and he takes Alice's order. Both have to post a small bond using lightning to prove they are real robots. Then, Alice posts the trade collateral also using a lightning hold invoice. DimBR locks the invoice until Alice confirms she received the fiat, then the satoshis are released to Bob. Enjoy your satoshis, Bob!",
                 )}
               </p>
               <p>
                 {t(
-                  'At no point, AnonymousAlice01 and BafflingBob02 have to entrust the bitcoin funds to each other. In case they have a conflict, the RoboSats coordinator will help resolving the dispute.',
+                  'At no point, AnonymousAlice01 and BafflingBob02 have to entrust the bitcoin funds to each other. In case they have a conflict, the DimBR coordinator will help resolving the dispute.',
                 )}
                 {t('You can find a step-by-step description of the trade pipeline in ')}
                 <Link target='_blank' href='https://learn.robosats.org/docs/trade-pipeline/'>
@@ -117,7 +117,7 @@ const AboutDialog = ({ open, onClose }: Props): React.JSX.Element => {
             <Typography component='div' variant='body2'>
               <p>
                 {t(
-                  'Each RoboSats coordinator will set a maximum trade size to minimize the hassle of lightning routing failures. There is no limits to the number of trades per day. A robot can only have one order at a time. However, you can use multiple robots simultaneously using the Robot garage. Remember to back up your robot tokens!',
+                  'Each DimBR coordinator will set a maximum trade size to minimize the hassle of lightning routing failures. There is no limits to the number of trades per day. A robot can only have one order at a time. However, you can use multiple robots simultaneously using the Robot garage. Remember to back up your robot tokens!',
                 )}{' '}
               </p>
             </Typography>
@@ -132,7 +132,7 @@ const AboutDialog = ({ open, onClose }: Props): React.JSX.Element => {
             <Typography component='div' variant='body2'>
               <p>
                 {t(
-                  'The trade fee is collected by the robosats coordinator as a compensation for their service. You can see the fees of each coordinator by checking out their profile. The trade fee is split to be covered by both: the order maker and the order taker. Typically, the maker fee will be significantly smaller than the taker fee. In case an onchain address is used to received the Sats a variable swap fee applies. The onchain payout fee can also be seen in the profile of the coordinator.',
+                  'The trade fee is collected by the DimBR coordinator as a compensation for their service. You can see the fees of each coordinator by checking out their profile. The trade fee is split to be covered by both: the order maker and the order taker. Typically, the maker fee will be significantly smaller than the taker fee. In case an onchain address is used to received the Sats a variable swap fee applies. The onchain payout fee can also be seen in the profile of the coordinator.',
                 )}{' '}
               </p>
               <p>
@@ -153,7 +153,7 @@ const AboutDialog = ({ open, onClose }: Props): React.JSX.Element => {
               <p>
                 {' '}
                 {t(
-                  'The RoboSats client, which you run on your local machine or browser, does not collect or share your IP address, location, name, or personal data. The client encrypts your private messages, which can only be decrypted by your trade partner.',
+                  'The DimBR client, which you run on your local machine or browser, does not collect or share your IP address, location, name, or personal data. The client encrypts your private messages, which can only be decrypted by your trade partner.',
                 )}{' '}
               </p>
               <p>
@@ -276,7 +276,7 @@ const AboutDialog = ({ open, onClose }: Props): React.JSX.Element => {
                   {t('(SimpleX)')}
                 </Link>
                 {t(
-                  '. RoboSats developers will never contact you. The developers or the coordinators will definitely never ask for your robot token.',
+                  '. DimBR developers will never contact you. The developers or the coordinators will definitely never ask for your robot token.',
                 )}
               </p>
             </Typography>

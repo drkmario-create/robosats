@@ -186,7 +186,7 @@ export const SuccessfulPrompt = ({
           {hostRating === 5 ? (
             <Typography variant='body2' align='center'>
               {t(
-                'RoboSats gets better with more liquidity and users. Tell a bitcoiner friend about Robosats!',
+                'DimBR gets better with more liquidity and users. Tell a bitcoiner friend about DimBR!',
               )}
             </Typography>
           ) : (
