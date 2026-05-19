@@ -74,7 +74,7 @@ const Welcome = ({ setView, width, setInputToken }: WelcomeProps): React.JSX.Ele
           <Grid container direction='column' alignItems='center' spacing={1} padding={1.5}>
             <Grid item>
               <Typography align='center'>
-                {t('Create a new robot and learn to use RoboSats')}
+                {t('Create a new robot and learn to use DimBR')}
               </Typography>
             </Grid>
             <Grid item>

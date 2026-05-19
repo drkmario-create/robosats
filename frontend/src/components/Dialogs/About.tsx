@@ -33,17 +33,17 @@ const AboutDialog = ({ open, onClose }: Props): React.JSX.Element => {
     >
       <DialogContent>
         <Typography component='h4' variant='h4'>
-          {t('What is RoboSats?')}
+          {t('What is DimBR?')}
         </Typography>
         <Typography component='div' variant='body2'>
           <p>
             {t('It is a BTC/FIAT peer-to-peer exchange over lightning.') + ' '}{' '}
             {t(
-              'It simplifies matchmaking and minimizes the need of trust. RoboSats focuses in privacy and speed.',
+              'It simplifies matchmaking and minimizes the need of trust. DimBR focuses in privacy and speed.',
             )}
           </p>
           <p>
-            {t('RoboSats is an open source project ')}{' '}
+            {t('DimBR is an open source project ')}{' '}
             <Link href='https://github.com/RoboSats/robosats'>{t('(GitHub).')}</Link>
           </p>
         </Typography>
@@ -87,7 +87,7 @@ const AboutDialog = ({ open, onClose }: Props): React.JSX.Element => {
               <p>
                 {' '}
                 {t(
-                  'RoboSats is a decentralized exchange with multiple, fully redundant, trade coordinators. The coordinator provides the infrastructure for your trade: mantains the intermediary lightning node, does book keeping, and relays your encrypted chat messages. The coordinator is also the judge in case your order enters a dispute. The coordinator is a trusted role, make sure you trust your coordinator by exploring its profile, webpage, social media and the comments from other users online.',
+                  'DimBR is a decentralized exchange with multiple, fully redundant, trade coordinators. The coordinator provides the infrastructure for your trade: mantains the intermediary lightning node, does book keeping, and relays your encrypted chat messages. The coordinator is also the judge in case your order enters a dispute. The coordinator is a trusted role, make sure you trust your coordinator by exploring its profile, webpage, social media and the comments from other users online.',
                 )}
               </p>
             </Typography>
@@ -146,7 +146,7 @@ const AboutDialog = ({ open, onClose }: Props): React.JSX.Element => {
 
         <Accordion disableGutters={true}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>{t('Is RoboSats private?')}</Typography>
+            <Typography>{t('Is DimBR private?')}</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography component='div' variant='body2'>
@@ -220,7 +220,7 @@ const AboutDialog = ({ open, onClose }: Props): React.JSX.Element => {
               <p>
                 {' '}
                 {t(
-                  'You can build more trust on the RoboSats and coordinator infrastructure by inspecting the source code.',
+                  'You can build more trust on the DimBR and coordinator infrastructure by inspecting the source code.',
                 )}{' '}
                 <Link href='https://github.com/RoboSats/robosats'> {t('Project source code')}</Link>
                 .{' '}
@@ -247,7 +247,7 @@ const AboutDialog = ({ open, onClose }: Props): React.JSX.Element => {
 
         <Accordion disableGutters={true}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>{t('Is RoboSats legal in my country?')}</Typography>
+            <Typography>{t('Is DimBR legal in my country?')}</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography component='div' variant='body2'>

@@ -663,3 +663,6 @@ api/lightning/*.proto
 
 # Traditional environment
 /traditional/
+
+# DimBR local files
+DimBR_LND_seed.txt

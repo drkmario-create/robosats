@@ -109,7 +109,7 @@ input[type='number'] {
 
 .navBarAvatar img {
   transform: scaleX(-1);
-  border: 1.3px solid #1976d2;
+  border: 1.3px solid #00bcd4;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%) brightness(150%) contrast(150%) drop-shadow(0.7px 0.7px 0.7px #000000);
 }
@@ -122,13 +122,13 @@ input[type='number'] {
   bottom: 0;
   right: 0;
   border-radius: 50%;
-  border: 2.4px solid #1976d2;
+  border: 2.4px solid #00bcd4;
   box-shadow: inset 0px 0px 35px rgb(255, 255, 255);
 }
 
 .navBarAvatarDark img {
   transform: scaleX(-1);
-  border: 1.3px solid #90caf9;
+  border: 1.3px solid #4dd0e1;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%) brightness(50%) contrast(180%) drop-shadow(0.7px 0.7px 0.7px #000000);
 }
@@ -141,7 +141,7 @@ input[type='number'] {
   bottom: 0;
   right: 0;
   border-radius: 50%;
-  border: 2.4px solid #90caf9;
+  border: 2.4px solid #4dd0e1;
   box-shadow: inset 0px 0px 35px rgb(255, 255, 255);
 }
 

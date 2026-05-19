@@ -55,8 +55,8 @@ const CommunityDialog = ({ open = false, onClose }: Props): React.JSX.Element =>
             </ListItemIcon>
 
             <ListItemText
-              primary={t('Join RoboSats SimpleX group')}
-              secondary={t('RoboSats main public support')}
+              primary={t('Join DimBR SimpleX group')}
+              secondary={t('DimBR main public support')}
             />
           </ListItemButton>
 
@@ -77,7 +77,7 @@ const CommunityDialog = ({ open = false, onClose }: Props): React.JSX.Element =>
             </ListItemIcon>
 
             <ListItemText
-              primary={t('Follow RoboSats in Nostr')}
+              primary={t('Follow DimBR in Nostr')}
               secondary={t('Nostr Official Account')}
             />
           </ListItemButton>

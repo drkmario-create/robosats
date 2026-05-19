@@ -133,14 +133,14 @@ REST_FRAMEWORK = {
 }
 
 SPECTACULAR_SETTINGS = {
-    "TITLE": "RoboSats REST API",
+    "TITLE": "DimBR REST API",
     "DESCRIPTION": textwrap.dedent(
         """
-        REST API Documentation for [RoboSats](https://learn.robosats.org) - A Simple and Private LN P2P Exchange
+        REST API Documentation for [DimBR](https://github.com/drkmario-create/robosats) - A Simple and Private LN P2P Exchange
 
         <p style='background-color:#fff0f0;padding:16px;border-radius:6px;border:2px solid #ffd3d3'>
         <span style='color:#f31f1f;font-weight:bold'>Note:</span>
-        The RoboSats REST API is on v0, which in other words, is beta.
+        The DimBR REST API is on v0, which in other words, is beta.
         We recommend that if you don't have time to actively maintain
         your project, do not build it with v0 of the API. A refactored, simpler
         and more stable version - v1 will be released soon™.
@@ -159,7 +159,7 @@ SPECTACULAR_SETTINGS = {
         "x-logo": {
             "url": "https://raw.githubusercontent.com/Robosats/robosats/main/frontend/static/assets/images/robosats-0.1.1-banner.png",
             "backgroundColor": "#FFFFFF",
-            "altText": "RoboSats logo",
+            "altText": "DimBR logo",
         }
     },
     "REDOC_DIST": "SIDECAR",
