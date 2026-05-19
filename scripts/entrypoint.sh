@@ -1,5 +1,24 @@
 #!/bin/sh
 
+ONION_FILE="/var/lib/tor/hidden_service/hostname"
+if [ -d "/var/lib/tor" ]; then
+    echo "Waiting for Tor hidden service hostname..."
+    WAIT=0
+    while [ ! -f "$ONION_FILE" ]; do
+        sleep 1
+        WAIT=$((WAIT + 1))
+        if [ $WAIT -ge 30 ]; then
+            echo "Warning: Tor onion hostname not found after 30s, continuing without it"
+            break
+        fi
+    done
+    if [ -f "$ONION_FILE" ]; then
+        ONION=$(cat "$ONION_FILE" | tr -d '\n')
+        export ONION_LOCATION="$ONION"
+        echo ">>> DimBR Onion: http://${ONION}"
+    fi
+fi
+
 # Apply migrations
 python manage.py migrate
 
@@ -10,7 +29,7 @@ else
     python manage.py collectstatic --noinput
 fi
 
-# Collect static files
+# Install python development dependencies
 if [ $DEVELOPMENT ]; then
     echo "Installing python development dependencies"
     pip install -r requirements_dev.txt

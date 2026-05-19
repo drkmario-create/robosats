@@ -33,6 +33,7 @@ services:
       - .:/usr/src/robosats
       - ./node/lnd:/lnd
       - ./node/cln:/cln
+      - ./node/tor/data:/var/lib/tor
     network_mode: service:tor
     command: python3 -u manage.py runserver 0.0.0.0:8000
 
@@ -156,6 +157,7 @@ services:
       - ./node/tor/data:/var/lib/tor
       - ./node/tor/config:/etc/tor
     ports:
+      - 80:80         # hidden service (via Tor Browser)
       - 8000:8000     # dev frontend build
       - 12596:12596   # umbrel frontend
 
